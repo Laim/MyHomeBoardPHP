@@ -12,6 +12,11 @@ Open the db configuration file (include/db/conn.php) and add your database detai
 
 If you are wanting to use the News or Weather widget, which at the time being are the only two you can use - you'll need to register for an API account at [NewsAPI](https://newsapi.org) and [OpenWeatherMap](https://openweathermap.org), then enter the API key into the configuration file (include/configuration.php).
 
+# Limitations to the Drop Down
+When Bootstrap 3 was released back in August 2013 [mdo](https://github.com/twbs/bootstrap/issues/21026#issuecomment-256704655) and I imagine some others decided to drop support for Submenus, this means that you can't out of the outbox created nested drop down menus in Navigation Bars anymore.  There are a few hacky ways that you can add it in to Bootstrap 4, but I've yet to find one that actually works well - so for the time being MyHomeBoardPHP won't be able to support them, sorry.  I am actively looking at ways of adding this as it is something I want myself. 
+
+[Bootstrap 3 Press Release](https://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/)
+
 # TODO
 * Add option to change configuration without needing to edit file
 * Add option to add links without needing to access mysql/phpmyadmin
