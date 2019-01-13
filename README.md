@@ -1,7 +1,7 @@
 # MyHomeBoardPHP
 MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers, as well as allowing you to customize with quick widgets (_coming soon_)
 
-You can get a live demo here: [MyHomeBoardPHP](https://demo-code.laimmckenzie.com/MyHomeBoardPHP/v1/)
+You can get a live demo here: [MyHomeBoardPHP](https://demo-code.laimmckenzie.com/MyHomeBoardPHP/)
 
 # Setup
 Downloading the source and upload anywhere on your site or localhost.
