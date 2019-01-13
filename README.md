@@ -11,5 +11,5 @@ Open the db configuration file (include/db/conn.php) and add your database detai
 If you are wanting to use the News or Weather widget, which at the time being are the only two you can use - you'll need to register for an API account at [NewsAPI](https://newsapi.org) and [OpenWeatherMap](https://openweathermap.org), then enter the API key into the configuration file (include/configuration.php).
 
 # TODO
-⋅⋅* Add option to change configuration without needing to edit file
-⋅⋅* Add option to add links without needing to access mysql/phpmyadmin
+* Add option to change configuration without needing to edit file
+* Add option to add links without needing to access mysql/phpmyadmin
