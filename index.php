@@ -18,58 +18,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="<?php print(META_DESCRIPTION);?>">
+  <meta name="author" content="<?php print(META_AUTHOR);?>">
+  <meta name="keywords" content="<?php print(META_KEYWORDS);?>">
   <link rel="icon" href="favicon.ico">
 
   <title>
     <?php print(WebName);?>
   </title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-
-  <!-- Custom Styling -->
-  <link href="<?php print(URL);?>/assets/css/custom.css" rel="stylesheet">
+  <?php require("include/style/css.php");?>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top box-shadow">
-    <a class="navbar-brand" href="#">
-      <?php echo(WebName);?></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto">
-      <?php foreach($home->StandaloneLinks() as $SL) { ?>
-        <li class="nav-item">
-          <a class="nav-link" <?php print($SL['LinkCustomClasses']);?> href="<?php print($SL['LinkHref']);?>"><?php print($SL['LinkName']);?></a>
-        </li>
-      <?php } ?>
-        <?php foreach($home->AllLinkHeaders() as $LH) { ?>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="<?php print($LH['HeaderLink']);?>" id="<?php print($LH['HeaderDDName']);?>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<?php print($LH['HeaderName']);?>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="<?php print($LH['HeaderDDName']);?>">
-          <?php foreach($home->AllLinksPerHID($LH['HID']) as $L) { ?>
-<a class="dropdown-item" <?php print($L['LinkCustomClasses']);?> href="<?php print($L['LinkHref']);?>"><?php print($L['LinkName']);?></a>
-          <?php } ?>
-          </div>
-        </li>
-        <?php } ?>
-      </ul>
-    </div>
-  </nav>
+  <?php require("include/navigation.php");?>
 
   <main role="main" class="container">
-    <?php if(ShowWeather == true) { ?>
+    <?php if(WeatherEnabled == true) { ?>
     <div class="row">
       <div class="col">
         <p>
@@ -85,7 +51,7 @@
       <div class="col">
         <span>
           <?php print(greetings() . ", " . Name);?></span>
-        <?php if(ShowTime == true) { ?>
+        <?php if(TimeEnabled == true) { ?>
         <span class="float-right d-none d-sm-block">
           <?php print(date_time(TimezoneLG));?></span>
         <span class="float-right d-block d-sm-none">
@@ -95,7 +61,7 @@
       </div>
     </div><!-- /.top row -->
 
-    <?php if(ShowNews == true) { ?>
+    <?php if(NewsEnabled == true) { ?>
     <div class="row mb-2">
 
       <?php $x = 0; while($x < ArticleCount) { ?>
@@ -130,11 +96,7 @@
     </div>
   </main><!-- /.container -->
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <?php require("include/style/javascript.php");?>
 </body>
 
 </html>
