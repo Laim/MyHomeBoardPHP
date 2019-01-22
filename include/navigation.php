@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-custom fixed-top box-shadow">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="<?php print(URL);?>">
       <?php if(NavShowImage == true) { ?>
-        <img class="d-block" src="<?php print(URL);?>/assets/images/<?php print(NavImage);?>" width="40" height="40" alt="Navigation Logo">
+        <img class="d-block" src="<?php print(URL);?>/assets/images/<?php print(NavImage);?>" width="<?php print(NavWidth);?>" height="<?php print(NavHeight);?>" alt="Navigation Logo">
       <?php } else { ?>
         <?php print(WebName);?>
       <?php } ?>
@@ -50,7 +50,9 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownManagement">
             <a class="dropdown-item" href="<?php print(URL);?>/links/">Link Management</a>
-            <a class="dropdown-item" href="https://github.com/laim/MyHomeBoardPHP/releases">Check for Updates</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://github.com/Laim/MyHomeBoardPHP/releases">Check for Updates</a>
+            <a class="dropdown-item" href="https://github.com/Laim/MyHomeBoardPHP/blob/master/CHANGELOG.md">Change Log</a>
           </div>
         </li>
      </ul>

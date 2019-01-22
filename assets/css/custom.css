@@ -1,5 +1,11 @@
 body {
     padding-top: 5rem;
+}
+
+.box-shadow { 
+   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
   }
 
- .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.text-bold {
+   font-weight: bold;
+ }
