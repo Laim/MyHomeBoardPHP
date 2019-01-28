@@ -1,22 +1,18 @@
 <?php
-    require("include/configuration.php");
-    require("include/helper.php");
-    require("include/api/include.php");
+  require("include/configuration.php");
+  require("include/helper.php");
+  require("include/db/conn.php");
+  require("include/db/func.php");
 
-    //
+  // Page specific
+  require("include/api/include.php");
 
-    require("include/db/conn.php");
-    require("include/db/func.php");
+  $home = new MyHomeBoardPHP($pdo);
 
-    $home = new MyHomeBoardPHP($pdo);
-
-    //
-    
-    if (isset($_POST['submit']))  
-    {
-      header('Location: ' . ExternalSearch . $_POST['ext_search']);
-      die();
-    }
+  if (isset($_POST['submit'])) {
+    header('Location: ' . ExternalSearch . $_POST['ext_search']);
+    die();
+  }
 ?>
 <!doctype html>
 <html lang="en">
@@ -27,7 +23,7 @@
   <meta name="description" content="<?php print(MetaDescription);?>">
   <meta name="author" content="<?php print(MetaAuthor);?>">
   <meta name="keywords" content="<?php print(MetaKeywords);?>">
-  <link rel="shortcut icon" href="https://demo-code.laimmckenzie.com/MyHomeBoardPHP/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="<?php print(URL);?>/favicon.ico" type="image/x-icon"/>
 
   <title>
     <?php print(WebName);?>
@@ -67,7 +63,7 @@
         <hr>
       </div>
     </div><!-- /.top row -->
-    
+
     <?php if(ExternalSearchEnabled == true) { ?>
     <div class="row">
       <div class="col">
@@ -112,6 +108,8 @@
 
     </div>
     <?php } ?>
+
+    <?php require("custom.php"); //custom widgets ?>
 
   <?php require("include/footer.php"); ?>
   </main><!-- /.container -->

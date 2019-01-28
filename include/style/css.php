@@ -7,11 +7,11 @@
   <!-- Custom Styling -->
   <link href="<?php print(URL);?>/assets/css/custom.css" rel="stylesheet">
 
+  <style>
 <?php if (NavCustom == true) { ?>
-    <style>
     .bg-custom
     {
       background-color: <?php print(NavCustomColor);?> !important
     }
-  </style>
 <?php } ?>
+  </style>

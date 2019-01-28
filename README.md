@@ -20,9 +20,11 @@ When Bootstrap 3 was released back in August 2013 [mdo](https://github.com/twbs/
 [Bootstrap 3 Press Release](https://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/)
 
 # TODO
-* Add option to change configuration without needing to edit file.
-* Make the Link Management page more userfriendly, **suggestions are welcome**.
-* Add some form of security.
+- Add option to change configuration without needing to edit file.
+- Add some form of security.
+    * Stop people from being able to send you delete links, and it delete your link
+    * Password protect Link Management
+
 
 # Thanks
-Thanks to the dudes on the [PlayerSquared](https://playersquared.com/forums/) Discord for giving me some top tier design ideas.
+Thanks to the dudes on the [PlayerSquared](https://playersquared.com/forums/) Discord for giving me some top tier design ideas and helping me with some of the link editing/adding PHP. (aka [tustin](https://github.com/tustin) + algebra)

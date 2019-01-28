@@ -2,7 +2,7 @@
 
     /************************************************
     *
-    * The below configuration is required for script 
+    * The below configuration is required for script
     * to work
     *
     *************************************************/
@@ -21,12 +21,12 @@
     **********************************************/
 
     /* Overall Site Configuration */
-    define("URL", "http://192.168.0.27"); // The URL that the website is hosted on, no trailing slash.
+    define("URL", "http://localhost"); // The URL that the website is hosted on, no trailing slash.
     define("WebName", "MyHomeBoardPHP"); // The name that shows on the navigation bar, title etc.
     define("Name", "Name"); // Your name. :-)
     define("MHBPHPVersion", "1.0.1");
 
-    /* Meta Tags Configuration */ 
+    /* Meta Tags Configuration */
     define("MetaAuthor", "Laim");
     define("MetaKeywords", "MyHomeBoardPHP, GitHub");
     define("MetaDescription", "MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers, as well as allowing you to customise with quick widgets.");
@@ -56,7 +56,7 @@
     define("TimezoneSM", "d/m/y"); // Time formatting: http://php.net/manual/en/function.date.php
 
     /* News Configuration
-    TODO: Update API to one that isn't trash or using get_file_contents 
+    TODO: Update API to one that isn't trash or using get_file_contents
     */
     define("NewsEnabled", true);
     define("NewsShowBody", false); // Hide or Show article body

@@ -36,4 +36,12 @@ function news_date_time($t, $f) {
     $time = $dt->format($f);
     return $time;
 }
+
+function link_substr($d, $a) {
+    if (strlen($d) > $a) {
+        return substr($d, 0, $a) . '...';
+    } else {
+        return $d;
+    }
+}
 ?>

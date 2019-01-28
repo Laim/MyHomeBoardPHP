@@ -16,7 +16,7 @@
         <!-- standalone links -->
         <?php foreach($home->StandaloneLinks() as $SL) { ?>
           <li class="nav-item">
-            <a class="nav-link" <?php print($SL['LinkCustomVar']);?> href="<?php print($SL['LinkHref']);?>">
+            <a class="nav-link" <?php print(stripslashes($SL['LinkCustomVar']));?> href="<?php print($SL['LinkHref']);?>">
               <span class="<?php print($SL['LinkFontAwesome']);?>"></span>
               <?php print($SL['LinkName']);?>
             </a>
@@ -32,7 +32,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="<?php print($LH['HeaderDDName']);?>">
           <?php foreach($home->AllLinksPerHID($LH['HID']) as $L) { ?>
-              <a class="dropdown-item" <?php print($L['LinkCustomVar']);?> href="<?php print($L['LinkHref']);?>">
+              <a class="dropdown-item" <?php print(stripslashes($L['LinkCustomVar']));?> href="<?php print($L['LinkHref']);?>">
                 <span class="<?php print($L['LinkFontAwesome']);?>"></span>
                 <?php print($L['LinkName']);?>
               </a>

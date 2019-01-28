@@ -3,19 +3,19 @@
     class MyHomeBoardPHP {
 
         private $db;
-    
+
         public function __construct(PDO $db){
         $this->db = $db;
         }
-    
+
         /* Header drop down functions */
 
         function DeleteHeader($hid)
         {
             $q = "DELETE LH.*, L.*
-            FROM `tblLinkHeaders` LH 
+            FROM `tblLinkHeaders` LH
             LEFT JOIN `tblLink` L
-            ON L.HID = LH.HID 
+            ON L.HID = LH.HID
             WHERE LH.HID = :hid";
             $query = $this->db->prepare($q);
             $query->execute( array('hid'=> $hid) );
@@ -26,7 +26,11 @@
             $q = "SELECT * FROM `tblLinkHeaders` WHERE `HID` = :hid";
             $query = $this->db->prepare($q);
             $query->execute( array('hid'=> $hid) );
-            return $query->fetchall();
+
+            if($query->rowCount() > 0)
+            {
+              return $query->fetchall();
+            }
         }
 
         function AllHeaders()
@@ -84,7 +88,29 @@
             $query = $this->db->prepare($q);
             $query->execute( array('lid'=> $lid) );
         }
-  
+
+        function GetLinkCountPerHID($HID)
+        {
+            $q = "SELECT * FROM `tblLink` WHERE `HID` = :hid";
+            $query = $this->db->prepare($q);
+            $query->execute( array('hid'=> $HID) );
+            return $query->rowCount();
+        }
+
+        function UpdateLink($lid, $hid, $lname, $lhref, $lorder, $lcvar, $lfonta)
+        {
+            $q = "UPDATE `tblLink` SET `HID` = :hid, `LinkName` = :lname, `LinkHref` = :lhref, `LinkOrder` = :lorder, `LinkCustomVar` = :lcvar, `LinkFontAwesome` = :lfonta WHERE `LID` = :lid";
+            $query = $this->db->prepare($q);
+            $query->execute( array( 
+                'hid'=>$hid, 
+                'lid'=> $lid, 
+                'lname'=>$lname,
+                'lhref'=>$lhref,
+                'lorder'=>$lorder,
+                'lcvar'=>$lcvar,
+                'lfonta'=>$lfonta
+                ) );
+        }
+
     }
 ?>
-  
