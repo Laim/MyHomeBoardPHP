@@ -28,7 +28,7 @@ Version: 1.0.1 (00 Jan. 2019)
 - Link mod (mod.php) page slightly cleaned up
 - Add New Link option added
 - Add New Hedder option added
-- Added option to hide version in copyright footer
+- Added option to hide version in powered by footer
 
 Version: 1.0 (13 Jan. 2019)
 - Initial Release
