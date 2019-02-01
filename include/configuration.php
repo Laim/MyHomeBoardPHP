@@ -24,7 +24,10 @@
     define("URL", "http://localhost"); // The URL that the website is hosted on, no trailing slash.
     define("WebName", "MyHomeBoardPHP"); // The name that shows on the navigation bar, title etc.
     define("Name", "Name"); // Your name. :-)
-    define("MHBPHPVersion", "1.0.1");
+    define("MHBPHP_Version", "1.0.1b4");
+    define("MHBPHP_HideVersion", false);
+    define("MHBPHP_DevFlag", true);
+
 
     /* Meta Tags Configuration */
     define("MetaAuthor", "Laim");

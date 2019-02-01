@@ -112,5 +112,19 @@
                 ) );
         }
 
+        function AddLink($hid, $lname, $lhref, $lorder, $lcvar, $lfonta)
+        {
+            $q = "INSERT INTO `tblLink`(`HID`, `LinkName`, `LinkHref`, `LinkOrder`, `LinkCustomVar`, `LinkFontAwesome`) VALUES (:hid, :lname, :lhref, :lorder, :lcvar, :lfonta)";
+            $query = $this->db->prepare($q);
+            $query->execute( array( 
+                'hid'=>$hid, 
+                'lname'=>$lname,
+                'lhref'=>$lhref,
+                'lorder'=>$lorder,
+                'lcvar'=>$lcvar,
+                'lfonta'=>$lfonta
+                ) );
+        }
+
     }
 ?>

@@ -24,6 +24,7 @@ When Bootstrap 3 was released back in August 2013 [mdo](https://github.com/twbs/
 - Add some form of security.
     * Stop people from being able to send you delete links, and it delete your link
     * Password protect Link Management
+- Filter and order by options in Link Management
 
 
 # Thanks

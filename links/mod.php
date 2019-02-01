@@ -28,15 +28,17 @@
             $db_edit_linkname = $home->GetLinkInfo($id)[0]['LinkName'];
             $db_edit_linkhref = $home->GetLinkInfo($id)[0]['LinkHref'];
             $db_edit_linkorder = $home->GetLinkInfo($id)[0]['LinkOrder'];
-            $db_edit_linkcustomvar = htmlentities(stripslashes($home->GetLinkInfo($id)[0]['LinkCustomVar']));
+            $db_edit_linkcustomvar = stripslashes($home->GetLinkInfo($id)[0]['LinkCustomVar']);
             $db_edit_linkfontawesome = $home->GetLinkInfo($id)[0]['LinkFontAwesome'];
         } elseif($action =="edit" && $type == "header") {
-
             header("location: " . URL . "/links/");
             die();
-
+        } else {
+            header("location: " . URL . "/links/");
+            die();
         }
         
+        // Edit Link Submit
         if(isset($_POST['el_submit'])) {
             $db_new_link_hid = htmlentities($_POST['LinkHeader']);
             $db_new_linkname = htmlentities($_POST['LinkName']);
@@ -48,6 +50,10 @@
             header("location: " . URL . "/links/");
             die();
         }
+
+    } else {
+        header("location: " . URL . "/links/");
+        die();
     }
 
 ?>
@@ -74,6 +80,9 @@
     <?php require("../include/navigation.php");?>
 
     <main role="main" class="container">
+
+    
+    <?php /* Edit Link */ if($type == "link" && $action == "edit") { ?>
         <div class="row">
             <div class="col">
             <h4>Edit Link</h4>
@@ -112,16 +121,18 @@
                     </div>
                     <div class="form-group">
                         <label for="LinkFontAwesome">Link Font Awesome</label>
-                        <input type="text" class="form-control" id="LinkFontAwesome" name="LinkFontAwesome" placeholder="fab fa-facebook" value="<?php print($db_edit_linkfontawesome);?>">
+                        <input type="text" class="form-control" id="LinkFontAwesome" name="LinkFontAwesome" placeholder="fab fa-github" value="<?php print($db_edit_linkfontawesome);?>">
                     </div>
                     <div class="form-group">
                         <label for="LinkCustomVar">Link Custom Variable</label>
-                        <input type="text" class="form-control" id="LinkCustomVar" name="LinkCustomVar" placeholder="rel=&quot;nofollow&quot; target=&quot;_blank&quot;" value="<?php print($db_edit_linkcustomvar);?>">
+                        <input type="text" class="form-control" id="LinkCustomVar" name="LinkCustomVar" placeholder="rel=&quot;nofollow&quot; target=&quot;_blank&quot;" value="<?php print(htmlentities($db_edit_linkcustomvar));?>">
                     </div>
                     <button type="submit" class="btn btn-primary float-right" id="el_submit" name="el_submit">Save</button>
                 </form>
             </div>
         </div>
+    <?php } ?>
+
     <?php require("../include/footer.php"); ?>
     </main><!-- /.container -->
 

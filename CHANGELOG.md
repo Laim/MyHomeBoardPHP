@@ -23,7 +23,12 @@ Version: 1.0.1 (00 Jan. 2019)
     * When deleting a header (the dropdown), it will also delete all links under the drop down unless they have been moved to another header already
 - Edit Link page added
 - Custom widget include added, this won't be wiped by updates
-
+- Added dev flag to code for those who are wanting to use pre-release/in-development versions
+    * Version variable renamed
+- Link mod (mod.php) page slightly cleaned up
+- Add New Link option added
+- Add New Hedder option added
+- Added option to hide version in copyright footer
 
 Version: 1.0 (13 Jan. 2019)
 - Initial Release

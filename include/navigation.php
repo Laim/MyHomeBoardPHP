@@ -58,3 +58,15 @@
      </ul>
     </div>
   </nav>
+
+<?php if(MHBPHP_DevFlag == true) { ?>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-primary text-bold" role="alert">
+          Development build of MyHomeBoardPHP <?php print(MHBPHP_Version);?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php } ?>

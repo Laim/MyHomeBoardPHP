@@ -12,7 +12,7 @@
     $weather_type = $data['weather'][0]['main'];
     $weather_icon = $data['weather'][0]['icon'];
     $weather_id = $data['weather'][0]['id'];
-    $weather_temp = Round($data['main']['temp']);
+    $weather_temp = $data['main']['temp'];
     $weather_country = $data['sys']['country'];
     $weather_city = $data['name'];
     $weather_location = $weather_city . ", " . $weather_country;

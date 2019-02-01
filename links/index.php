@@ -7,12 +7,12 @@
   $home = new MyHomeBoardPHP($pdo);
 
   if (isset($_GET['name']) && isset($_GET['action']) && isset($_GET['type'])) {
-      $d_type = htmlentities($_GET['type']);
-      $d_action = htmlentities($_GET['action']);
-      $d_name = htmlentities($_GET['name']);
-      $d_alert = true;
+      $alert_type = htmlentities($_GET['type']);
+      $alert_action = htmlentities($_GET['action']);
+      $alert_name = htmlentities($_GET['name']);
+      $show_alert = true;
   } else {
-      $d_alert = false;
+      $show_alert = false;
   }
 ?>
 <!doctype html>
@@ -39,11 +39,11 @@
 
   <main role="main" class="container">
 
-	<?php if($d_alert == true) { ?>
+	<?php if($show_alert == true) { ?>
 	<div class="row">
 		<div class="col">
-			<div class="alert alert-danger" role="alert">
-				The <?php print($d_type . " <b>" . $d_name . "</b>");?> has been <?php print($d_action);?>.
+			<div class="alert alert-info" role="alert">
+				The <?php print($alert_type . " <b>" . $alert_name . "</b>");?> has been <?php print($alert_action);?>.
 			</div>
 		</div>
 	</div>

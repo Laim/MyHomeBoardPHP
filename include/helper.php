@@ -44,4 +44,5 @@ function link_substr($d, $a) {
         return $d;
     }
 }
+
 ?>
