@@ -25,6 +25,25 @@
                 die();
             }
         }
+
+        // Add Header Submit
+        if(isset($_POST['ah_submit'])) {
+            $db_new_headername = htmlentities($_POST['HeaderName']);
+            $db_new_headerlink = "#";
+            $db_new_headerorder = $home->GetHeaderCount() + 1;
+            $db_new_headerddname = addslashes($_POST['HeaderDDName']);
+            $db_new_headerfontawesome = htmlentities($_POST['HeaderFontAwesome']);
+            
+            if(!empty($db_new_headername) && !empty($db_new_headerddname)) {
+                $home->AddHeader($db_new_headername, $db_new_headerlink, $db_new_headerorder, $db_new_headerddname, $db_new_headerfontawesome);
+            
+                header("location: " . URL . "/links/?action=added&name=" . $db_new_linkname . "&type=link");
+                die();
+            }
+        }
+    } else {
+        header("location: " . URL . "/links/");
+        die();
     }
 
 ?>
@@ -55,7 +74,7 @@
     <?php /* Add Link */ if($type == "link") { ?>
         <div class="row">
             <div class="col">
-            <h4>Add New Link</h4>
+            <h4>Add Link</h4>
             <hr>
                 <form action="" method="post">
                     <div class="row">
@@ -94,7 +113,7 @@
     <?php /* Add Header */ } elseif($type == "header") { ?>
         <div class="row">
             <div class="col">
-            <h4>Add New Header</h4>
+            <h4>Add Header</h4>
             <hr>
                 <form action="" method="post">
                     <div class="form-group">
@@ -102,16 +121,13 @@
                         <input type="text" class="form-control" id="HeaderName" name="HeaderName" placeholder="Development" required>
                     </div>
                     <div class="form-group">
-                        <label for="HeaderLink">Header Href</label>
-                        <input type="url" class="form-control" id="HeaderLink" name="HeaderLink" placeholder="https://github.com/laim/MyHomeBoardPHP">
-                    </div>
-                    <div class="form-group">
-                        <label for="LinkFontAwesome">Link Font Awesome</label>
-                        <input type="text" class="form-control" id="LinkFontAwesome" name="LinkFontAwesome" placeholder="fab fa-github">
+                        <label for="HeaderFontAwesome">Header Font Awesome</label>
+                        <input type="text" class="form-control" id="HeaderFontAwesome" name="HeaderFontAwesome" placeholder="fab fa-github">
                     </div>
                     <div class="form-group">
                         <label for="HeaderDDName">Header Dropdown Name</label>
                         <input type="text" class="form-control" id="HeaderDDName" name="HeaderDDName" placeholder="dropdownDevelopment" required>
+                        <label for="HeaderDDName" class="text-muted mt-1" style="font-size: 12px;">This is required, suggestion: dropdownHeaderName</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" id="ah_submit" name="ah_submit">Save</button>
                 </form>

@@ -56,9 +56,9 @@
 			</div>
 			<div class="col-md-6 mb-2">
 				<span class="float-right d-none d-md-block">
-					<a href="<?php print(URL);?>/links/add.php?type=link">New Link</a>
+					<a href="<?php print(URL);?>/links/add.php?type=link">Add Link</a>
 					<span> - </span>
-					<a href="<?php print(URL);?>/links/add.php?type=header">New Header</a>
+					<a href="<?php print(URL);?>/links/add.php?type=header">Add Header</a>
 				</span>
 			</div>
 		</div>
@@ -109,9 +109,9 @@
                             <td><?php print($LH['HeaderName']);?></td>
                             <td class="d-none d-lg-table-cell"><?php print($LH['HeaderFontAwesome']);?></td>
                             <td class="text-center">
-                            	<a class="btn btn-primary btn-sm hidden" href="<?php print(URL);?>/links/mod.php?id=<?php print($LH['HID']);?>&action=edit&type=header">
+                            	<a class="btn btn-primary btn-sm" href="<?php print(URL);?>/links/mod.php?id=<?php print($LH['HID']);?>&action=edit&type=header">
                                 	<span class="fas fa-pencil-alt"></span>
-                                </a>
+                              </a>
                            		<a class="btn btn-primary btn-sm" href="<?php print(URL);?>/links/mod.php?id=<?php print($LH['HID']);?>&action=delete&type=header">
                                     <span class="fas fa-trash"></span>
                                 </a>

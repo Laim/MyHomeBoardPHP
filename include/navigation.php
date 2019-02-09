@@ -50,9 +50,10 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownManagement">
             <a class="dropdown-item" href="<?php print(URL);?>/links/">Link Management</a>
+            <?php if(MHBPHP_HideCU == false) { ?>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://github.com/Laim/MyHomeBoardPHP/releases">Check for Updates</a>
-            <a class="dropdown-item" href="https://github.com/Laim/MyHomeBoardPHP/blob/master/CHANGELOG.md">Change Log</a>
+            <a class="dropdown-item" href="https://github.com/laim/myhomeboardphp/releases">Check for Updates</a>
+            <?php } ?>
           </div>
         </li>
      </ul>

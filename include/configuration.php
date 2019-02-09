@@ -24,9 +24,10 @@
     define("URL", "http://localhost"); // The URL that the website is hosted on, no trailing slash.
     define("WebName", "MyHomeBoardPHP"); // The name that shows on the navigation bar, title etc.
     define("Name", "Name"); // Your name. :-)
-    define("MHBPHP_Version", "1.0.1b4");
-    define("MHBPHP_HideVersion", false);
-    define("MHBPHP_DevFlag", true);
+    define("MHBPHP_Version", "2.0"); // dinny touch this 
+    define("MHBPHP_HideVersion", false); // Lets you hide the version that appears in the footer for security
+    define("MHBPHP_HideCU", false); // Lets you hide the Check for Updates button in the management dropdown
+    define("MHBPHP_DevFlag", false); // dinny touch this
 
 
     /* Meta Tags Configuration */
@@ -48,8 +49,8 @@
     define("NavHeight", "35px");
 
     /* Weather Configuration */
-    define("WeatherEnabled", true);
-    define("WeatherAPIKey", "9b83cc8760fcfd42e157d418286f20c9"); // Create an account at https://openweathermap.org and put your API key here
+    define("WeatherEnabled", false);
+    define("WeatherAPIKey", ""); // Create an account at https://openweathermap.org and put your API key here
     define("WeatherLocation", "Glasgow");
 
     /* Date and Time Configuration */
@@ -61,10 +62,10 @@
     /* News Configuration
     TODO: Update API to one that isn't trash or using get_file_contents
     */
-    define("NewsEnabled", true);
+    define("NewsEnabled", false);
     define("NewsShowBody", false); // Hide or Show article body
     define("NewsArticleCount", 2); // The amount of articles you want to appear.
-    define("NewsAPI", "2103d288c1f84f65a782e08a0c68d5bc");
+    define("NewsAPI", "");
     define("NewsQuery", "Brexit"); // The topic you want to see if the news type is "everything".
     define("NewsSource", "techcrunch"); // The news source if type is top-headlines, list available here: https://newsapi.org/sources
     define("NewsType", "top-headlines"); // everything or top-headlines

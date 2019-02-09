@@ -8,9 +8,9 @@ You can get a live demo here: [MyHomeBoardPHP](https://demo-code.laimmckenzie.co
 # Setup
 Downloading the source and upload anywhere on your site or localhost.
 
-Upload the .sql file to your MySQL server, how you do this is your own choice but I use/tested this with phpmyadmin.
+Upload the .sql file (myhomeboardphp.sql) to your MySQL server, how you do this is your own choice but I use/tested this with phpmyadmin.
 
-Open the db configuration file (include/db/conn.php) and add your database details in,.
+Open the configuration file (include/configuration.php) and update it to your liking, DB credentials are required at the top.
 
 If you are wanting to use the News or Weather widget, which at the time being are the only two you can use - you'll need to register for an API account at [NewsAPI](https://newsapi.org) and [OpenWeatherMap](https://openweathermap.org), then enter the API key into the configuration file (include/configuration.php).
 

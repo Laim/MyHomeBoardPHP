@@ -1,11 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 4.8.4
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3306
--- Generation Time: Jan 13, 2019 at 02:35 AM
--- Server version: 5.6.39-cll-lve
--- PHP Version: 5.6.30
+-- Host: localhost
+-- Generation Time: Feb 09, 2019 at 02:29 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laimmcke_devd`
+-- Database: `myhomeboardphp`
 --
 
 -- --------------------------------------------------------
@@ -34,17 +30,18 @@ CREATE TABLE `tblLink` (
   `LinkName` varchar(255) NOT NULL,
   `LinkHref` varchar(255) NOT NULL,
   `LinkOrder` int(255) NOT NULL,
-  `LinkCustomClasses` varchar(255) NOT NULL
+  `LinkCustomVar` varchar(255) NOT NULL,
+  `LinkFontAwesome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tblLink`
 --
 
-INSERT INTO `tblLink` (`LID`, `HID`, `LinkName`, `LinkHref`, `LinkOrder`, `LinkCustomClasses`) VALUES
-(1, 1, '<span class=\"fab fa-reddit-square\"></span> Reddit', 'https://reddit.com', 1, 'rel=\"nofollow\" target=\"_blank\"'),
-(2, 0, 'GitHub', 'https://github.com/laim', 1, ''),
-(3, 1, 'Twitter', 'https://twitter.com', 2, '');
+INSERT INTO `tblLink` (`LID`, `HID`, `LinkName`, `LinkHref`, `LinkOrder`, `LinkCustomVar`, `LinkFontAwesome`) VALUES
+(1, 0, 'GitHub', 'https://github.com/laim/myhomeboardphp', 1, 'rel=\\\"nofollow\\\" target=\\\"_blank\\\"', 'fab fa-github'),
+(2, 1, 'Twitter', 'https://twitter.com/lyeuhm', 1, '', 'fab fa-twitter'),
+(3, 1, 'Instagram', 'https://instagram.com/lyeuhm', 2, '', '');
 
 -- --------------------------------------------------------
 
@@ -57,15 +54,16 @@ CREATE TABLE `tblLinkHeaders` (
   `HeaderName` varchar(255) NOT NULL,
   `HeaderLink` varchar(255) NOT NULL,
   `HeaderDDName` varchar(255) NOT NULL COMMENT 'Dropdown Name',
-  `HeaderOrder` int(11) NOT NULL
+  `HeaderOrder` int(11) NOT NULL,
+  `HeaderFontAwesome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tblLinkHeaders`
 --
 
-INSERT INTO `tblLinkHeaders` (`HID`, `HeaderName`, `HeaderLink`, `HeaderDDName`, `HeaderOrder`) VALUES
-(1, 'Social Media', '#', 'dropdownSocialMedia', 1);
+INSERT INTO `tblLinkHeaders` (`HID`, `HeaderName`, `HeaderLink`, `HeaderDDName`, `HeaderOrder`, `HeaderFontAwesome`) VALUES
+(1, 'Social Media', '#', 'dropdownSocialMedia', 1, '');
 
 --
 -- Indexes for dumped tables
@@ -98,6 +96,7 @@ ALTER TABLE `tblLink`
 --
 ALTER TABLE `tblLinkHeaders`
   MODIFY `HID` int(255) NOT NULL AUTO_INCREMENT COMMENT 'Link Header ID', AUTO_INCREMENT=2;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

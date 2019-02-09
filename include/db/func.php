@@ -60,7 +60,7 @@
 
         function AllLinks()
         {
-            $q = "SELECT * FROM `tblLink`";
+            $q = "SELECT * FROM `tblLink` ORDER BY `HID` ASC";
             $query = $this->db->prepare($q);
             $query->execute();
             return $query->fetchall();
@@ -97,6 +97,14 @@
             return $query->rowCount();
         }
 
+        function GetHeaderCount()
+        {
+            $q = "SELECT * FROM `tblLinkHeaders`";
+            $query = $this->db->prepare($q);
+            $query->execute();
+            return $query->rowCount();
+        }
+
         function UpdateLink($lid, $hid, $lname, $lhref, $lorder, $lcvar, $lfonta)
         {
             $q = "UPDATE `tblLink` SET `HID` = :hid, `LinkName` = :lname, `LinkHref` = :lhref, `LinkOrder` = :lorder, `LinkCustomVar` = :lcvar, `LinkFontAwesome` = :lfonta WHERE `LID` = :lid";
@@ -126,5 +134,31 @@
                 ) );
         }
 
+        function AddHeader($hname, $hlink, $horder, $hddname, $hfonta)
+        {
+            $q = "INSERT INTO `tblLinkHeaders`(`HeaderName`, `HeaderLink`, `HeaderOrder`, `HeaderDDName`, `HeaderFontAwesome`) VALUES (:hname, :hlink, :horder, :hddname, :hfonta)";
+            $query = $this->db->prepare($q);
+            $query->execute( array( 
+                'hname'=>$hname,
+                'hlink'=>$hlink,
+                'horder'=>$horder,
+                'hddname'=>$hddname,
+                'hfonta'=>$hfonta
+                ) );
+        }
+
+        function UpdateHeader($hid, $hname, $hlink, $horder, $hddname, $hfonta)
+        {
+            $q = "UPDATE `tblLinkHeaders` SET `HeaderName` = :hname, `HeaderLink` = :hlink, `HeaderOrder` = :horder, `HeaderDDName` = :hddname, `HeaderFontAwesome` = :hfonta WHERE `HID` = :hid";
+            $query = $this->db->prepare($q);
+            $query->execute( array( 
+                'hid'=>$hid, 
+                'hname'=>$hname,
+                'hlink'=>$hlink,
+                'horder'=>$horder,
+                'hddname'=>$hddname,
+                'hfonta'=>$hfonta
+                ) );
+        }
     }
 ?>

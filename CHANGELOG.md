@@ -1,4 +1,4 @@
-Version: 1.0.1 (00 Jan. 2019)
+Version: 2.0 (09 Feb. 2019)
 - CHANGELOG.MD created
 - Database Configuration added to configuration file
 - Configuration file reworded and split down
@@ -22,13 +22,15 @@ Version: 1.0.1 (00 Jan. 2019)
 - Delete Link Headers via the Link Management option
     * When deleting a header (the dropdown), it will also delete all links under the drop down unless they have been moved to another header already
 - Edit Link page added
+- Edit Header page added
 - Custom widget include added, this won't be wiped by updates
 - Added dev flag to code for those who are wanting to use pre-release/in-development versions
     * Version variable renamed
-- Link mod (mod.php) page slightly cleaned up
 - Add New Link option added
 - Add New Hedder option added
-- Added option to hide version in powered by footer
+- Added option to hide version in copyright footer
+- Added option to hide check for update link
+- Link / Header updated alert added to /links/ page
 
 Version: 1.0 (13 Jan. 2019)
 - Initial Release
