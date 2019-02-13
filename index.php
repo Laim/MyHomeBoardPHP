@@ -63,7 +63,7 @@
         <hr>
       </div>
     </div><!-- /.top row -->
-
+    
     <?php if(ExternalSearchEnabled == true) { ?>
     <div class="row">
       <div class="col">
@@ -78,6 +78,8 @@
       </div>
     </div>
     <?php } ?>
+    
+    <?php if(MHBPHP_FR == true) { include("include/first_run/" . MHBPHP_FR_LANG . ".php"); } //incl. first run ?>
 
     <?php if(NewsEnabled == true) { ?>
     <div class="row mb-2">

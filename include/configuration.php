@@ -28,7 +28,8 @@
     define("MHBPHP_HideVersion", false); // Lets you hide the version that appears in the footer for security
     define("MHBPHP_HideCU", false); // Lets you hide the Check for Updates button in the management dropdown
     define("MHBPHP_DevFlag", false); // dinny touch this
-
+    define("MHBPHP_FR", true); // First run or not, this needs updated to false to remove the introduction text
+    define("MHBPHP_FR_LANG", "EN-SCOT"); // dinny touch this
 
     /* Meta Tags Configuration */
     define("MetaAuthor", "Laim");
@@ -36,7 +37,7 @@
     define("MetaDescription", "MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers, as well as allowing you to customise with quick widgets.");
 
     /* Search Bar */
-    define("ExternalSearchEnabled", true);
+    define("ExternalSearchEnabled", false);
     define("ExternalSearchPlaceholder", "Google Search");
     define("ExternalSearch","http://google.com/search?q="); // If you want to use another search engine, replace it here. I.E. http://www.bing.com/search?q=
 

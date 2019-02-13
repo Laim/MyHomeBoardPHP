@@ -101,6 +101,7 @@
                     <div class="form-group">
                         <label for="LinkFontAwesome">Link Font Awesome</label>
                         <input type="text" class="form-control" id="LinkFontAwesome" name="LinkFontAwesome" placeholder="fab fa-github">
+                        <label for="LinkFontAwesome" class="text-muted mt-1" style="font-size: 12px;">Full list of icons available <a href="//fontawesome.com/icons" target="_blank">here</a>.</label>
                     </div>
                     <div class="form-group">
                         <label for="LinkCustomVar">Link Custom Variable</label>
@@ -123,6 +124,7 @@
                     <div class="form-group">
                         <label for="HeaderFontAwesome">Header Font Awesome</label>
                         <input type="text" class="form-control" id="HeaderFontAwesome" name="HeaderFontAwesome" placeholder="fab fa-github">
+                        <label for="HeaderFontAwesome" class="text-muted mt-1" style="font-size: 12px;">Full list of icons available <a href="//fontawesome.com/icons" target="_blank">here</a>.</label>
                     </div>
                     <div class="form-group">
                         <label for="HeaderDDName">Header Dropdown Name</label>

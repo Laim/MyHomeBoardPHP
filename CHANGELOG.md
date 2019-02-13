@@ -1,4 +1,9 @@
-Version: 2.0 (09 Feb. 2019)
+__Version 2.1 (_00 Feb, 2019_)__
+- Sub-text added to font-awesome textbox for adding/editing links and headers
+- Google Search set to disabled by default
+- New 'Introduction' section included for 'first run'
+***
+__Version: 2.0 (_09 Feb. 2019_)__
 - CHANGELOG.MD created
 - Database Configuration added to configuration file
 - Configuration file reworded and split down
@@ -31,6 +36,7 @@ Version: 2.0 (09 Feb. 2019)
 - Added option to hide version in copyright footer
 - Added option to hide check for update link
 - Link / Header updated alert added to /links/ page
-
-Version: 1.0 (13 Jan. 2019)
+- Font Awesome updated to v5.7.1
+***
+__Version: 1.0 (_13 Jan. 2019_)__
 - Initial Release
