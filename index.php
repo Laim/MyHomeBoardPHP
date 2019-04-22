@@ -68,10 +68,10 @@
     <div class="row">
       <div class="col">
         <form name="form" action="" method="post">
-          <div class="input-group mb-3">
-            <input type="text" name="ext_search" class="form-control" placeholder="<?php print(ExternalSearchPlaceholder);?>" aria-label="<?php print(ExternalSearchPlaceholder);?>" aria-describedby="ext_search">
+          <div class="input-group mb-3 box-shadow">
+            <input type="text" id="ext_search_txt" name="ext_search" onkeyup="SearchEnabled()" class="form-control" placeholder="<?php print(ExternalSearchPlaceholder);?>" aria-label="<?php print(ExternalSearchPlaceholder);?>" aria-describedby="ext_search">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="submit" id="ext_search" name="submit">Search</button>
+              <button class="btn btn-outline-secondary" type="submit" id="ext_search" name="submit" disabled>Search</button>
             </div>
           </div>
         <form>

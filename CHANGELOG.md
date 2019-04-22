@@ -2,6 +2,7 @@ __Version 2.1 (_00 Feb, 2019_)__
 - Sub-text added to font-awesome textbox for adding/editing links and headers
 - Google Search set to disabled by default
 - New 'Introduction' section included for 'first run'
+- External search button is set to disabled unless there is text in the search box, allowing you to have multiple search bars on the same page and it not send to your external search every time you press enter.
 ***
 __Version: 2.0 (_09 Feb. 2019_)__
 - CHANGELOG.MD created

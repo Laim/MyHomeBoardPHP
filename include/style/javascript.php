@@ -9,3 +9,12 @@
     $('[data-toggle="tooltip"]').tooltip()
   })
   </script>
+  <script>
+  function SearchEnabled() {
+	 if(document.getElementById("ext_search_txt").value==="") {
+            document.getElementById('ext_search').disabled = true;
+        } else {
+            document.getElementById('ext_search').disabled = false;
+        }
+  }
+  </script>
