@@ -7,6 +7,11 @@
   <!-- Custom Styling -->
   <link href="<?php print(URL);?>/assets/css/custom.css" rel="stylesheet">
 
+<?php if(DarkMode == true) { ?>
+  <!-- Dark Mode -->
+  <link href="<?php print(URL);?>/assets/css/dark.css" rel="stylesheet">
+<?php } ?>
+
   <style>
 <?php if (NavCustom == true) { ?>
     .bg-custom

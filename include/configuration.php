@@ -24,10 +24,11 @@
     define("URL", "http://localhost"); // The URL that the website is hosted on, no trailing slash.
     define("WebName", "MyHomeBoardPHP"); // The name that shows on the navigation bar, title etc.
     define("Name", "Name"); // Your name. :-)
-    define("MHBPHP_Version", "2.1"); // dinny touch this 
+    define("DarkMode", true); // Uses a darker mode for the site intead of the standard white mode
+    define("MHBPHP_Version", "3.0"); // dinny touch this 
     define("MHBPHP_HideVersion", false); // Lets you hide the version that appears in the footer for security
     define("MHBPHP_HideCU", false); // Lets you hide the Check for Updates button in the management dropdown
-    define("MHBPHP_DevFlag", false); // dinny touch this
+    define("MHBPHP_DevFlag", true); // dinny touch this
     define("MHBPHP_FR", true); // First run or not, this needs updated to false to remove the introduction text
     define("MHBPHP_FR_LANG", "EN-SCOT"); // dinny touch this, it's not full implemented yet.
 
