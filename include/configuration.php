@@ -28,7 +28,7 @@
     define("MHBPHP_Version", "3.0"); // dinny touch this 
     define("MHBPHP_HideVersion", false); // Lets you hide the version that appears in the footer for security
     define("MHBPHP_HideCU", false); // Lets you hide the Check for Updates button in the management dropdown
-    define("MHBPHP_DevFlag", true); // dinny touch this
+    define("MHBPHP_DevFlag", false); // dinny touch this
     define("MHBPHP_FR", true); // First run or not, this needs updated to false to remove the introduction text
     define("MHBPHP_FR_LANG", "EN-SCOT"); // dinny touch this, it's not full implemented yet.
 
@@ -52,7 +52,7 @@
 
     /* Weather Configuration */
     define("WeatherEnabled", false);
-    define("WeatherAPIKey", ""); // Create an account at https://openweathermap.org and put your API key here
+    define("WeatherAPIKey", "9b83cc8760fcfd42e157d418286f20c9"); // Create an account at https://openweathermap.org and put your API key here
     define("WeatherLocation", "Glasgow");
 
     /* Date and Time Configuration */

@@ -40,7 +40,7 @@ CREATE TABLE `tblLink` (
 
 INSERT INTO `tblLink` (`LID`, `HID`, `LinkName`, `LinkHref`, `LinkOrder`, `LinkCustomVar`, `LinkFontAwesome`) VALUES
 (1, 0, 'GitHub', 'https://github.com/laim/myhomeboardphp', 1, 'rel=\\\"nofollow\\\" target=\\\"_blank\\\"', 'fab fa-github'),
-(2, 1, 'Twitter', 'https://twitter.com/lyeuhm', 1, '', 'fab fa-twitter'),
+(2, 1, 'Twitter', 'https://twitter.com/lilpeepachu', 1, '', 'fab fa-twitter'),
 (3, 1, 'Instagram', 'https://instagram.com/lyeuhm', 2, '', '');
 
 -- --------------------------------------------------------

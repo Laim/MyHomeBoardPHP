@@ -9,7 +9,7 @@
 
 <?php if(DarkMode == true) { ?>
   <!-- Dark Mode -->
-  <link href="<?php print(URL);?>/assets/css/dark.css" rel="stylesheet">
+  <link href="<?php print(URL);?>/assets/css/dark.css?v3" rel="stylesheet">
 <?php } ?>
 
   <style>
