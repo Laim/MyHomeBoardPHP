@@ -1,4 +1,7 @@
-__Version 2.1 (_00 Feb, 2019_)__
+__Version 3.0 (_22 Jun, 2019_)__
+- Dark Mode
+***
+__Version 2.1 (_22 Apr, 2019_)__
 - Sub-text added to font-awesome textbox for adding/editing links and headers
 - Google Search set to disabled by default
 - New 'Introduction' section included for 'first run'
