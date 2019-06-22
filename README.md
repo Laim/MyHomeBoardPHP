@@ -1,12 +1,22 @@
 # MyHomeBoardPHP
-MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers, as well as allowing you to customize with quick widgets (_coming soon_)
+MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers.
 
-MyHomeBoardPHP is meant for internal or protected external purposes only, there is no form of security to prevent anyone from modifying your links.  This is something I am wanting to add in the future, but for the time being this is an _internal_ script only.
+MyHomeBoardPHP is meant for internal or protected external purposes only, there is no form of security to prevent anyone from modifying your links.  This is something I am wanting to add in the future.
 
 You can get a live demo here: [MyHomeBoardPHP](https://demo-code.laimmckenzie.com/MyHomeBoardPHP/)
 
+# Features
+Below are a list of some of the features included in MyHomeBoardPHP, based on the most recent release.
+
+- Dark Mode
+- Recent News based on keyword or website (brexit, techcrunch)
+- Weather for your location (based on city entered into config)
+- Built in search function (Google, Bing)
+- Bookmark like linking system
+- Mobile Responsive
+
 # Setup
-Downloading the source and upload anywhere on your site or localhost.
+Download the source and upload anywhere on your site or localhost.
 
 Upload the .sql file (myhomeboardphp.sql) to your MySQL server, how you do this is your own choice but I use/tested this with phpmyadmin.
 
