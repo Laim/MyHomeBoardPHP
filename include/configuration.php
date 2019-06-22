@@ -24,7 +24,8 @@
     define("URL", "http://localhost"); // The URL that the website is hosted on, no trailing slash.
     define("WebName", "MyHomeBoardPHP"); // The name that shows on the navigation bar, title etc.
     define("Name", "Name"); // Your name. :-)
-    define("MHBPHP_Version", "2.1"); // dinny touch this 
+    define("DarkMode", true); // Uses a darker mode for the site intead of the standard white mode
+    define("MHBPHP_Version", "3.0"); // dinny touch this 
     define("MHBPHP_HideVersion", false); // Lets you hide the version that appears in the footer for security
     define("MHBPHP_HideCU", false); // Lets you hide the Check for Updates button in the management dropdown
     define("MHBPHP_DevFlag", false); // dinny touch this
@@ -51,7 +52,7 @@
 
     /* Weather Configuration */
     define("WeatherEnabled", false);
-    define("WeatherAPIKey", ""); // Create an account at https://openweathermap.org and put your API key here
+    define("WeatherAPIKey", "9b83cc8760fcfd42e157d418286f20c9"); // Create an account at https://openweathermap.org and put your API key here
     define("WeatherLocation", "Glasgow");
 
     /* Date and Time Configuration */
