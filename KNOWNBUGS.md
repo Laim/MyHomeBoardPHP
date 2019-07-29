@@ -1,2 +1,1 @@
 - When you change the header a link is assigned to, it keeps the order and doesn't offer any other options, meaning you need to edit the license twice.
-- If someone sends you a link to delete one of your links, there is no confirmation and it will remove the link. I.E. http://localhost/links/mod.php?id=89&action=delete&type=link 

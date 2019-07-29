@@ -25,10 +25,11 @@
     define("WebName", "MyHomeBoardPHP"); // The name that shows on the navigation bar, title etc.
     define("Name", "Name"); // Your name. :-)
     define("DarkMode", true); // Uses a darker mode for the site intead of the standard white mode
-    define("MHBPHP_Version", "3.0"); // dinny touch this 
+    define("MHBPHP_Version", "3.0.1b"); // dinny touch this 
     define("MHBPHP_HideVersion", false); // Lets you hide the version that appears in the footer for security
     define("MHBPHP_HideCU", false); // Lets you hide the Check for Updates button in the management dropdown
-    define("MHBPHP_DevFlag", false); // dinny touch this
+    define("MHBPHP_DevFlag", true); // dinny touch this
+    define("MHBPHP_Release","2019-07-28");
     define("MHBPHP_FR", true); // First run or not, this needs updated to false to remove the introduction text
     define("MHBPHP_FR_LANG", "EN-SCOT"); // dinny touch this, it's not full implemented yet.
 
@@ -38,12 +39,12 @@
     define("MetaDescription", "MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers, as well as allowing you to customise with quick widgets.");
 
     /* Search Bar */
-    define("ExternalSearchEnabled", false);
+    define("ExternalSearchEnabled", true);
     define("ExternalSearchPlaceholder", "Google Search");
     define("ExternalSearch","http://google.com/search?q="); // If you want to use another search engine, replace it here. I.E. http://www.bing.com/search?q=
 
     /* Navbar Configuration */
-    define("NavCustom", true);
+    define("NavCustom", false);
     define("NavCustomColor", "#c42b45");
     define("NavShowImage", true); // Enable this if you want to show an image instead of text on the navbar
     define("NavImage", "mhbphp-logo.png"); // Image should be placed in /assets/images/
@@ -51,8 +52,8 @@
     define("NavHeight", "35px");
 
     /* Weather Configuration */
-    define("WeatherEnabled", false);
-    define("WeatherAPIKey", "9b83cc8760fcfd42e157d418286f20c9"); // Create an account at https://openweathermap.org and put your API key here
+    define("WeatherEnabled", true);
+    define("WeatherAPIKey", ""); // Create an account at https://openweathermap.org and put your API key here
     define("WeatherLocation", "Glasgow");
 
     /* Date and Time Configuration */

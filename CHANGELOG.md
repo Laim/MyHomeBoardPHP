@@ -1,3 +1,10 @@
+__Version 3.0.1b (_xx xxx, 2019_)__
+- Link Management section changed for future release
+    * /links/ changed to /management/links/
+    * /management/ currently redirects to /management/links/
+- Delete page changed from mod.php to del.php and requires confirmation to complete deletion
+- Button colors changed
+***
 __Version 3.0 (_22 Jun, 2019_)__
 - Dark Mode
 ***

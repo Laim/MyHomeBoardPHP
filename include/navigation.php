@@ -49,7 +49,7 @@
             Management
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownManagement">
-            <a class="dropdown-item" href="<?php print(URL);?>/links/">Link Management</a>
+            <a class="dropdown-item" href="<?php print(URL);?>/management/">Management</a>
             <?php if(MHBPHP_HideCU == false) { ?>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="https://github.com/laim/myhomeboardphp/releases">Check for Updates</a>
@@ -59,15 +59,3 @@
      </ul>
     </div>
   </nav>
-
-<?php if(MHBPHP_DevFlag == true) { ?>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="alert alert-primary text-bold" role="alert">
-          Development build of MyHomeBoardPHP <?php print(MHBPHP_Version);?>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php } ?>
