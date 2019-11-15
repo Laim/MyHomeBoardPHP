@@ -1,3 +1,6 @@
+# Discontinued Notice
+MyHomeBoardPHP has been discontinued, I am currently re-writing the entire thing and will be released under [MyHomeBoardPHP4](https://github.com/Laim/MyHomeBoardPHP4). 
+
 # MyHomeBoardPHP
 MyHomeBoardPHP is a hostable homepage allowing you to take your bookmarks anywhere without the need of syncing browsers.
 
