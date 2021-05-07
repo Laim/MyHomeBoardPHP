@@ -69,7 +69,7 @@
 				  		<th>Order</th>
               			<th>Header</th>
 				  		<th>Name</th>
-				  		<th class="d-none d-lg-table-cell">Font Awesome</th>
+				  		<th class="d-none d-lg-table-cell">Icon</th>
 				  		<th>Tools</th>
 				  	</thead>
 				  	<tbody>
@@ -96,10 +96,10 @@
 			<section class="header-sec" style="display: none;">
 				<div class="table-responsive">
 				  <table class="table table-bordered" style="background-color: rgb(245, 245, 245);">
-				  	<thead class="thead-dark thead-cdark" style="padding: 5px;">
+				  	<thead class="thead-light thead-cdark" style="padding: 5px;">
 				  		<th>Order</th>
 				  		<th>Name</th>
-				  		<th class="d-none d-lg-table-cell">Font Awesome</th>
+				  		<th class="d-none d-lg-table-cell">Icon</th>
 				  		<th>Tools</th>
 				  	</thead>
 				  	<tbody>
